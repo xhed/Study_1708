@@ -14,8 +14,10 @@
         - [2.4.3. git log](#243-git-log)
         - [2.4.4. git reset](#244-git-reset)
     - [2.5. Git 远程操作](#25-git-远程操作)
-        - [git remote add](#git-remote-add)
-        - [git remote -v](#git-remote--v)
+        - [2.5.1. git remote add](#251-git-remote-add)
+        - [2.5.2. git remote -v](#252-git-remote--v)
+        - [2.5.3. git push](#253-git-push)
+        - [2.5.4. git pull](#254-git-pull)
 
 <!-- /TOC -->
 # 1. markdown
@@ -57,10 +59,10 @@ Github 基于Git的功能，设计的一个代码管理平台（网站）
 
 ## 2.1. Github注册
 
-sign in 登录
-sign up 注册
+    sign in 登录
+    sign up 注册
 
-javascript
+    javascript
 
 ## 2.2. Git安装
 
@@ -71,12 +73,12 @@ GUI 用户图形界面
 bash : basic shell
 shell 是一种用在Linux，Unix操作系统上的命令行工具，比cmd强大很多
 
-cmd: dir
-shell: ls
+    cmd: dir
+    shell: ls
 
-vscode： ctrl+` 打开 terminal
+    vscode： ctrl+` 打开 terminal
 
-调出vscode命令板，select default shell
+    调出vscode命令板，select default shell
 
 ## 2.4. Git命令
 
@@ -106,8 +108,18 @@ git reflog 查看更详细的日志，可以看到“未来”
 
 ## 2.5. Git 远程操作
 
-### git remote add
+### 2.5.1. git remote add
 git remote add [远程名字] [远程地址]
 
-### git remote -v
+### 2.5.2. git remote -v
 查看本仓库，添加了哪些远程地址
+
+### 2.5.3. git push
+
+git push origin [起点]:[终点]
+                本地   远程
+
+### 2.5.4. git pull
+
+git push origin [起点]:[终点]
+                远程   本地   
