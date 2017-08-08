@@ -10,6 +10,7 @@
     - [1.3. 布尔值](#13-布尔值)
         - [1.3.1. 逻辑运算](#131-逻辑运算)
 - [Math(全局对象)](#math全局对象)
+    - [作业](#作业)
 
 <!-- /TOC -->
 # 1. 数据类型
@@ -127,6 +128,9 @@ console.log(5e+10);
 # Math(全局对象)
 
     document.write
-    console.log
-    window.alert
-    Math
+    console.log()
+    alert()
+
+## 作业
+
+    输入弦长和拱高，求弧面长度
