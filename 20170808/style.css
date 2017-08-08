@@ -3,6 +3,6 @@
     height: 50px;
     background-color: rgb(100,200,100);
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     top:0;
 }
