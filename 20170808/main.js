@@ -2,7 +2,7 @@ var bridgeWidth = prompt('请输入弦长');
 var bridgeHeight = prompt('请输入拱高');
 
 var topAngle = Math.atan((bridgeWidth/2)/bridgeHeight);
-var centerAngle = (Math.PI / 2) - topAngle;
+var centerAngle = Math.PI - (topAngle*2);
 var R = (bridgeWidth/2) / Math.sin(centerAngle);
 
 var bridgeLength = centerAngle * R * 2;
