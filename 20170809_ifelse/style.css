@@ -1,0 +1,12 @@
+.father{
+    width: 400px;
+    height: 300px;
+    background: #666;
+}
+.son{
+    width: 30px;
+    height: 40px;
+    color: #ff0;  
+    font: bold 24px"微软雅黑";
+    position: relative;
+}

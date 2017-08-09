@@ -4,7 +4,7 @@ var testDom3 = document.getElementById("Test3");
 var testDom4 = document.getElementById("Test4");
 var testDom5 = document.getElementById("Test5");
 var testDom6 = document.getElementById("Test6");
-var g = 9.87*160;
+var g = 9.87*100;
 
 var randomBgColor = function(dom){
     var r = Math.round(Math.random()*100+100);
@@ -20,11 +20,11 @@ var bindBall = function(dom,g,vx){
     var upToDown = true; // true 代表从上往下运动，false代表从下网上
     var leftToRight = true;
     var time = 0;       // 每次运动的当前时间
-    var height = 665;   // 下落的具体高度
-    var width = 1230;
+    var height = 430;   // 下落的具体高度
+    var width = 730;
     var interval = 5; // 多久运动一次 ms
     var maxV = 0;
-    randomBgColor(dom);
+    // randomBgColor(dom);
 
     setInterval(function(){
         time+=interval;
@@ -36,7 +36,7 @@ var bindBall = function(dom,g,vx){
         }
 
         if(domTop>height){
-            // randomBgColor(dom);
+            randomBgColor(dom);
                 
             maxV = (time/1000)*g;
             console.log(maxV);
@@ -70,8 +70,8 @@ var bindBall = function(dom,g,vx){
 }
 
 bindBall(testDom1,g,1)
-bindBall(testDom2,g,2)
-bindBall(testDom3,g,3)
-bindBall(testDom4,g,4)
-bindBall(testDom5,g,5)
-bindBall(testDom6,g,6)
+bindBall(testDom2,g,1.2)
+bindBall(testDom3,g,1.4)
+bindBall(testDom4,g,1.6)
+bindBall(testDom5,g,1.8)
+bindBall(testDom6,g,2)

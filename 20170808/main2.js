@@ -36,6 +36,8 @@ setInterval(function(){
         testDomTop = height - (maxV*time/1000 - 0.5*g*Math.pow(time/1000,2));
     }
 
+    // testDomTop += upToDown?5:-5;
+
     if(testDomTop>height){
         maxV = (time/1000)*g;
         console.log(maxV);
@@ -48,7 +50,6 @@ setInterval(function(){
         time = 0;
         upToDown = !upToDown;
     }
-
 
     testDom.style.top = testDomTop + "px";
 
