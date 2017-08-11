@@ -62,6 +62,7 @@ setInterval(function(){
 //     var result = (a<b)  ?  (a<c)?a:c  :  (b<c)?b:c ;
 //     console.log(result);              
 // }
+
 var qiuYueShu = function(fenzi){
     var count = 0;
     for(var n=2;n<fenzi;n++){
@@ -70,10 +71,6 @@ var qiuYueShu = function(fenzi){
         }
     }
     return count+2;
-}
-
-var shuiXianHua = function(n){
-
 }
 
 for(var i=2;i<=100;i++){
@@ -105,10 +102,30 @@ var quWei = function(number,n){
 
 for(var i=100;i<=999;i++){
     var n1,n2,n3;
-    a3 = quWei(i,3);
-    a2 = quWei(i,2);
-    a1 = quWei(i,1);
+    var a3 = quWei(i,3);
+    var a2 = quWei(i,2);
+    var a1 = quWei(i,1);
     if(Math.pow(a3,3)+Math.pow(a2,3)+Math.pow(a1,3)===i){
         console.log("数字"+i+"是一个水仙花数");
+    }
+}
+
+/**
+ * 
+ * @param {number} n 我要计算几位数的 自幂数 
+ * @param {number} i 一个n位数,从最小数，到最大数
+ * @param {number} miHe 一个n位数的，每一位的n次方的和
+ */
+var ziMiShu = function(n){ // n = 3
+    for(var i=Math.pow(10,n-1);i<Math.pow(10,n);i++){
+        // i = 123
+        var miHe = 0;
+        for(var j=1;j<=n;j++){
+            var tmp = quWei(i,j); // 取到的一位数
+            miHe += Math.pow(tmp,n); // 0 + 27 ;  27+8; 35+1;  36
+        }
+        if(miHe===i){
+            console.log("数字"+i+"是一个自幂数");
+        }
     }
 }
