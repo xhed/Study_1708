@@ -32,12 +32,10 @@ var randomMove = setInterval(function(){
         v = randomV(5);
     }else if(ballTop<0){
         ballTop = 0;
-        v = randomV(5);
-        
+        v = randomV(5);     
     }else if(ballTop>containerHeight-40){
         ballTop = containerHeight-40;
-        v = randomV(5);
-        
+        v = randomV(5);     
     }else{
 
     }
