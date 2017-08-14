@@ -1,0 +1,19 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 800px;
+    height: 600px;
+    background: #eee;
+    border:1px solid #999;
+}
+
+#Ball{
+    width: 40px;
+    height: 40px;
+    background: #09f;
+    border-radius: 50%;
+    position: relative;
+}
