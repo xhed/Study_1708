@@ -24,3 +24,27 @@
 6. 下午，主要新知识点
 ## 1.1. 作业
 1. 自学（复习） markdown
+
+
+```
+<html lang="en"> // 整个网页，一定都在html标签里面
+    <head>  // 网页的信息，不会呈现在网页内容上
+        <meta charset="UTF-8">  // 原信息标签(编码)
+        <title>Document</title>  // 页面标题
+        <script src="main.js"></script>  // 引入js文件
+        <link rel="stylesheet" href="style.css"> // 引入css文件
+        <meta name="keywords" content="第一天,HTML,mrakdown"> //关键字
+    <meta name="description" content="这是我第一天学习了HTML的课程，以及打开网页浏览源代码的方法"> //语句 和关键字一样都是先定义名字再定义它的内容
+        <style>  // 内部样式
+            head{
+                height:100px;
+                background: #45fff0;
+            }
+        </style>
+    </head>
+    <body>
+        
+    </body>
+
+</html>
+```
