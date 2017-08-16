@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+   
+
+    .container {
+        width: 400px;
+        height: 300px;
+        background-color: #999;
+        overflow: hidden;
+        margin: 40px 0 0;
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+        background: #f00;
+    }
+
+    .box1 {
+        background-color: #f00;
+    }
+
+    .box2 {
+        background-color: #0f0;
+    }
+
+    .box3 {
+        background-color: #00f;
+    }
+
+    .box4 {
+        background-color: #0ff;
+    }
+
+    .box5 {
+        background-color: #f0f;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="anchor1" class="box box1">box 1</div>
+        <div id="anchor2" class="box box2">box 2</div>
+        <div id="anchor3" class="box box3">box 3</div>
+        <div id="anchor4" class="box box4">box 4</div>
+        <div id="anchor5" class="box box5">box 5</div>
+    </div>
+    <a href="#anchor1">锚点 1</a>
+    <a href="#anchor2">锚点 2</a>
+    <a href="#anchor3">锚点 3</a>
+    <a href="#anchor4">锚点 4</a>
+    <a href="#anchor5">锚点 5</a>
+
+    <hr>
+
+    <table border="1" cellspacing="0" width="400" height="400">
+        <tr>
+            <td colspan="2">单元格1</td>
+            <!-- <td>单元格2</td> -->
+            <td rowspan="2">单元格3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">单元格4</td>
+            <td>单元格5</td>
+            <!-- <td>单元格6</td> -->
+        </tr>
+        <tr>
+            <!-- <td>单元格7</td> -->
+            <td colspan="2">单元格8</td>
+            <!-- <td>单元格9</td> -->
+        </tr>
+    </table>
+
+    <hr>
+
+    <table width="320" height="200" cellspacing="0" border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>籍贯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">请用黑色签字笔填写请用黑色签字笔填写请用黑色签字笔填写请用黑色签字笔填写请用黑色签字笔填写请用黑色签字笔填写请用黑色签字笔填写</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <form action="./index.html" method="POST">
+        <input type="text" name="用户名">
+        <input type="text" name="昵称">
+        <input type="text" name="密码">
+        <input type="button" value="常规按钮">
+        <input type="reset" value="重置按钮">
+        <input type="submit" value="提交按钮">
+    </form>
+
+</body>
+</html>
