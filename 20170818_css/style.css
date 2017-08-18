@@ -1,0 +1,17 @@
+body .box{background: #ffff00;
+        
+}
+body *{background: #ff00ff;
+        width:100px; 
+        height:100px;
+        /* 只需要在优先级最低的里面编辑属性就可以，也叫重叠性 */
+}
+body #Main{background: #ff0000;
+       
+}
+body div{background: #00ff00;
+   
+}
+body [id="Main"]{background: #999900;
+        
+}
