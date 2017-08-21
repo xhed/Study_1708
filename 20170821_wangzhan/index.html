@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #a {
+            display: block;
+            height: 50px;
+            width: 100px;
+            float: left;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked+label {
+            border: 2px solid #f00;
+        }
+
+        label {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            border: 2px solid #fff;
+            float: left;
+        }
+
+        label[for="p1"] {
+            background: url('./1.jpg');
+        }
+
+        label[for="p2"] {
+            background: url('./2.jpg');
+        }
+
+        label[for="p3"] {
+            background: url('./3.jpg');
+        }
+
+        label[for="p4"] {
+            background: url('./4.jpg');
+        }
+
+        label[for="p5"] {
+            background: url('./5.jpg');
+        }
+
+        label[for="p6"] {
+            background: url('./6.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <input type="checkbox" name="user1" id="p1">
+            <label for="p1"></label>
+            <input type="checkbox" name="user2" id="p2">
+            <label for="p2"></label>
+            <input type="checkbox" name="user3" id="p3">
+            <label for="p3"></label>
+            <input type="checkbox" name="user4" id="p4">
+            <label for="p4"></label>
+            <input type="checkbox" name="user5" id="p5">
+            <label for="p5"></label>
+            <input type="checkbox" name="user6" id="p6">
+            <label for="p6"></label>
+        </div>
+        <br>
+        <div>
+            <input ID="a" type="submit" value="确定提交">
+        </div>
+    </form>
+</body>
+
+</html>
